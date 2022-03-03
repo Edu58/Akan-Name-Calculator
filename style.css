@@ -32,7 +32,7 @@ nav a .calc {
     color: var(--color-green);
 }
 
-/* .hero {
+ .hero {
     min-height: 80vh;
 }
 
@@ -40,10 +40,10 @@ nav a .calc {
     padding-right: 2rem;
 }
 
-.hero p {
+.hero .intro p {
     font-weight: 500;
 }
 
 .hero small {
     font-size: .8rem;
-} */
+}
