@@ -24,13 +24,13 @@ body {
     min-height: 100vh;
 }
 
-/* nav a .akan {
+nav a .akan {
     color: var(--color-red);
 }
 
 nav a .calc {
     color: var(--color-green);
-} */
+}
 
 /* .hero {
     min-height: 80vh;
