@@ -54,40 +54,43 @@
       <div class="form">
         <form>
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
+            <label for="day" class="form-label fs-4"
+              >Day of the month</label
             >
             <input
-              type="email"
+              type="number"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="day"
+              aria-describedby="day of the month"
+              required
+              min="1"
+              max="31"
             />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Password</label
+            <label for="year&month" class="form-label fs-4"
+              >Month and year</label
             >
             <input
-              type="password"
+              type="month"
               class="form-control"
-              id="exampleInputPassword1"
+              id="month and year"
+              required
             />
           </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Check me out</label
-            >
+          <div>
+            <label for="gender" class="form-label fs-4">
+              Gender
+            </label>
+            <div>
+              <select class="custom-select rounded px-3 py-1 w-100" required>
+                <option selected>Open this select menu</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+              </select>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn mt-lg-4 mt-md-2 w-100">Submit</button>
         </form>
       </div>
     </section>

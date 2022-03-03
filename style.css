@@ -33,7 +33,7 @@ nav a .calc {
 }
 
  .hero {
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 .hero .intro {
@@ -46,4 +46,12 @@ nav a .calc {
 
 .hero small {
     font-size: .8rem;
+}
+
+.hero .form form input {
+    min-width: 20rem;
+}
+
+.hero .form form button {
+    background-color: var(--color-yellow);
 }
