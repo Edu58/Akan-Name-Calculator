@@ -55,6 +55,21 @@
         <form>
           <div class="mb-3">
             <label for="day" class="form-label fs-4"
+              >Your name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="your name"
+              required
+              min="1"
+              max="31"
+              placeholder="e.g. edwin"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="day" class="form-label fs-4"
               >Day of the month</label
             >
             <input
@@ -65,6 +80,7 @@
               required
               min="1"
               max="31"
+              placeholder="e.g. 2, 16, 30"
             />
           </div>
           <div class="mb-3">
@@ -83,14 +99,13 @@
               Gender
             </label>
             <div>
-              <select class="custom-select rounded px-3 py-1 w-100" required>
-                <option selected>Open this select menu</option>
+              <select class="custom-select rounded px-3 py-1 w-100">
                 <option value="1">Male</option>
                 <option value="2">Female</option>
               </select>
             </div>
           </div>
-          <button type="submit" class="btn mt-lg-4 mt-md-2 w-100">Submit</button>
+          <button type="submit" class="btn mt-lg-3 mt-md-3 w-100">Submit</button>
         </form>
       </div>
     </section>
