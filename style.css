@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* Color variables to avoid repetition and make changes much easier */
 :root {
     --color-yellow: #F4D03F;
     --color-green: #27AE60;
     --color-red: #e21d1d;
 }
 
+/* Global rules */
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -63,6 +65,8 @@ nav a .calc {
 .hero .form form button {
     background-color: var(--color-yellow);
 }
+
+/* Media queries for responsiveness */
 
 @media screen and (max-width: 2560px) {
     .hero .form form input {

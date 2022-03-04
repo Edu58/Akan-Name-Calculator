@@ -52,7 +52,7 @@
       </div>
 
       <div class="form">
-        <form>
+        <form id="form">
           <div class="mb-3">
             <label for="day" class="form-label fs-4"
               >Your name</label
@@ -90,7 +90,7 @@
             <input
               type="month"
               class="form-control"
-              id="month and year"
+              id="month_and_year"
               required
             />
           </div>
@@ -99,13 +99,13 @@
               Gender
             </label>
             <div>
-              <select class="custom-select rounded px-3 py-1 w-100">
-                <option value="1">Male</option>
-                <option value="2">Female</option>
+              <select class="custom-select rounded px-3 py-1 w-100" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
               </select>
             </div>
           </div>
-          <button type="submit" class="btn mt-lg-3 mt-md-3 w-100">Submit</button>
+          <button type="submit" class="btn mt-lg-4 mt-md-3 w-100">Submit</button>
         </form>
       </div>
     </section>
