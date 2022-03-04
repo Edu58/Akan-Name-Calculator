@@ -1,102 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* Color variables to avoid repetition and make changes much easier */
 :root {
-    --color-yellow: #F4D03F;
-    --color-green: #27AE60;
-    --color-red: #e21d1d;
+  --color-yellow: #f4d03f;
+  --color-green: #27ae60;
+  --color-red: #e21d1d;
 }
 
 /* Global rules */
-*{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    background: linear-gradient(90deg, var(--color-yellow) 50%, var(--color-green) 50%);
-    backdrop-filter: blur( .5px );
-    -webkit-backdrop-filter: blur( .5px );
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    transition: .2 all;
+  background: linear-gradient(
+    90deg,
+    var(--color-yellow) 50%,
+    var(--color-green) 50%
+  );
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  transition: 0.2 all;
 }
 
 nav a .akan {
-    color: var(--color-red);
+  color: var(--color-red);
 }
 
 nav a .calc {
-    color: var(--color-green);
+  color: var(--color-green);
 }
 
- .hero {
-    min-height: 60vh;
+.hero {
+  min-height: 60vh;
 }
 
 .hero .intro {
-    padding-right: 2rem;
+  padding-right: 2rem;
+  width: 50%;
 }
 
-.hero .intro p, .hero .form form label, .hero .form form button {
-    font-weight: 500;
+.hero .intro p,
+.hero .form form label,
+.hero .form form button {
+  font-weight: 500;
 }
 
 .hero small {
-    font-size: .8rem;
+  font-size: 0.8rem;
 }
 .hero .form form {
-    padding: 2rem;
-    background: rgba( 255, 255, 255, 0.15 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .hero .form form label {
-    color: #34495E ;
+  color: #34495e;
 }
 
 .hero .form form button {
-    background-color: var(--color-yellow);
+  background-color: var(--color-yellow);
 }
 
 .modal {
-    display: none;
-    transition: 5s all;
+  display: none;
+  transition: 5s all;
 }
 
-.modal.show{
-    display: contents;
+.modal.show {
+  display: contents;
 }
 
 .modal .card {
-    position: absolute;
-    top: 10%;
-    left: 40%;
-    background: rgba(255, 255, 255, 0.925);
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  background: rgba(255, 255, 255, 0.925);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 2560px) {
-    .hero .form form input {
-        min-width: 20rem;
-    }
+  .hero .form form input {
+    min-width: 20rem;
+  }
 }
 
 @media screen and (max-width: 998px) {
-    .hero .form form input {
-        min-width: 17rem;
-    }
+  .hero .form form input {
+    min-width: 17rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background: linear-gradient(
+      180deg,
+      var(--color-yellow) 50%,
+      var(--color-green) 50%
+    );
+  }
+
+  .hero {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .hero .intro {
+    width: 100%;
+  }
+
+  .hero .form form {
+    padding: 2rem;
+    margin-top: 12rem;
+  }
+
+  .hero .form form button {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hero .form form {
+    padding: 2rem;
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero .form form {
+    padding: 1rem;
+  }
 }

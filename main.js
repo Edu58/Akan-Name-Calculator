@@ -18,13 +18,13 @@ const femaleAkanName = [
   "Ama",
 ];
 const weekDays = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
 ];
 
 // Get user input frrom the from
@@ -41,9 +41,9 @@ form.addEventListener("submit", (e) => {
   const month_and_year = document.getElementById("month_and_year").value;
   const gender = document.getElementById("gender").value;
   const openModal = document.getElementById("open-modal");
-    const closeModal = document.getElementById("close-modal");
-    const akanInModal = document.getElementById("akan-name-modal");
-    const revealDay = document.getElementById("reveal-day")
+  const closeModal = document.getElementById("close-modal");
+  const akanInModal = document.getElementById("akan-name-modal");
+  const revealDay = document.getElementById("reveal-day");
 
   /*
     Formula To Calculate Day of The Week
@@ -74,15 +74,15 @@ form.addEventListener("submit", (e) => {
 
     // Now apply the formula
     //  Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-      const male_day_of_week =
-          (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + day) % 7;
-      
+    const male_day_of_week =
+      (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + day) % 7;
+
     // Convert negative numbers to positive
-      const malePositive = Math.abs(Math.round(male_day_of_week));
-     
-      console.log(maleAkanName[malePositive]);
-      akanInModal.textContent = maleAkanName[malePositive];
-      revealDay.textContent = `This is probably because you were born on a ${weekDays[malePositive]}`
+    const malePositive = Math.abs(Math.round(male_day_of_week));
+
+    console.log(maleAkanName[malePositive]);
+    akanInModal.textContent = maleAkanName[malePositive];
+    revealDay.textContent = `This is probably because you were born on a ${weekDays[malePositive]}`;
     openModal.classList.toggle("show");
   }
 
@@ -100,15 +100,15 @@ form.addEventListener("submit", (e) => {
       (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + day) % 7;
 
     // Convert negative numbers to positive
-      const femalePositive = Math.abs(Math.round(female_day_of_week));
-      
-      console.log(femaleAkanName[femalePositive]);
-      akanInModal.textContent = femaleAkanName[femalePositive];
-      revealDay.textContent = `This is probably because you were born on a ${weekDays[femalePositive]}`;
-      openModal.classList.toggle("show");
+    const femalePositive = Math.abs(Math.round(female_day_of_week));
+
+    console.log(femaleAkanName[femalePositive]);
+    akanInModal.textContent = femaleAkanName[femalePositive];
+    revealDay.textContent = `This is because you were born on a ${weekDays[femalePositive]}`;
+    openModal.classList.toggle("show");
   }
-    
-    closeModal.addEventListener('click', () => {
-        openModal.classList.remove('show')
-    })
+
+  closeModal.addEventListener("click", () => {
+    openModal.classList.remove("show");
+  });
 });
