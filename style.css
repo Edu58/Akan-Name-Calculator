@@ -86,7 +86,7 @@ nav a .calc {
 .modal .card {
   position: absolute;
   top: 10%;
-  left: 40%;
+  left: 25%;
   background: rgba(255, 255, 255, 0.925);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -142,6 +142,11 @@ nav a .calc {
   .hero .form form {
     padding: 2rem;
     margin-top: 8rem;
+  }
+
+  .modal .card {
+    left: 12%;
+    min-width: 80%;
   }
 }
 
