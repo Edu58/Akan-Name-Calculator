@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
   const month_and_year = document.getElementById("month_and_year").value;
   const gender = document.getElementById("gender").value;
 
-    /*
+  /*
     Formula To Calculate Day of The Week
     Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
 
@@ -35,13 +35,23 @@ form.addEventListener('submit', (e) => {
     getFemaleAkanName();
   }
 
-  // Process name if gender is male
+  // If user is male this function will be exectuted
   function getMaleAkanName() {
-    
-  }
-
-  // Process name if gender is male
-  function getFemaleAkanName() {
+    // Number() is used to change the type of data to int. parseInt() doesn't
+    // Slice() is used to get segments of the date received
+    const CC = Number(month_and_year.slice(0, 2));
+    const YY = Number(month_and_year.slice(2, 4));
+    const MM = Number(month_and_year.slice(5));
     console.log(userName);
   }
+
+  // If user is male this function will be exectute
+    function getFemaleAkanName() {
+      // Number() is used to change the type of data to int. parseInt() doesn't
+      // Slice() is used to get segments of the date received
+      const CC = Number(month_and_year.slice(0, 2));
+      const YY = Number(month_and_year.slice(2, 4));
+      const MM = Number(month_and_year.slice(5));
+      console.log(userName);
+    }
 });
