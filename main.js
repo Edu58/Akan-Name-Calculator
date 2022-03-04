@@ -17,6 +17,15 @@ const femaleAkanName = [
   "Afua",
   "Ama",
 ];
+const weekDays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+];
 
 // Get user input frrom the from
 const form = document.getElementById("form");
@@ -73,6 +82,7 @@ form.addEventListener("submit", (e) => {
      
       console.log(maleAkanName[malePositive]);
       akanInModal.textContent = maleAkanName[malePositive];
+      revealDay.textContent = `This is probably because you were born on a ${weekDays[malePositive]}`
     openModal.classList.toggle("show");
   }
 
@@ -90,8 +100,12 @@ form.addEventListener("submit", (e) => {
       (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + day) % 7;
 
     // Convert negative numbers to positive
-    const femalePositive = Math.abs(female_day_of_week);
-    console.log(femalePositive);
+      const femalePositive = Math.abs(Math.round(female_day_of_week));
+      
+      console.log(femaleAkanName[femalePositive]);
+      akanInModal.textContent = femaleAkanName[femalePositive];
+      revealDay.textContent = `This is probably because you were born on a ${weekDays[femalePositive]}`;
+      openModal.classList.toggle("show");
   }
     
     closeModal.addEventListener('click', () => {
