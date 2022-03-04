@@ -24,6 +24,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
+    transition: .2 all;
 }
 
 nav a .akan {
@@ -64,6 +65,26 @@ nav a .calc {
 
 .hero .form form button {
     background-color: var(--color-yellow);
+}
+
+.modal {
+    display: none;
+    transition: 5s all;
+}
+
+.modal.show{
+    display: contents;
+}
+
+.modal .card {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    background: rgba(255, 255, 255, 0.925);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* Media queries for responsiveness */
