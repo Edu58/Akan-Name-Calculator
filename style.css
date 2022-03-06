@@ -76,11 +76,11 @@ nav a .calc {
 
 .modal {
   display: none;
-  transition: 5s all;
 }
 
 .modal.show {
   display: contents;
+  transition: transform 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
 
 .modal .card {

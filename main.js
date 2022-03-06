@@ -84,6 +84,9 @@ form.addEventListener("submit", (e) => {
     akanInModal.textContent = maleAkanName[malePositive];
     revealDay.textContent = `This is probably because you were born on a ${weekDays[malePositive]}`;
     openModal.classList.toggle("show");
+
+    // clear form
+    form.reset()
   }
 
   // If user is male this function will be exectute
@@ -106,6 +109,9 @@ form.addEventListener("submit", (e) => {
     akanInModal.textContent = femaleAkanName[femalePositive];
     revealDay.textContent = `This is because you were born on a ${weekDays[femalePositive]}`;
     openModal.classList.toggle("show");
+
+    // clear form
+    form.reset();
   }
 
   closeModal.addEventListener("click", () => {
