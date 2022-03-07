@@ -4,6 +4,9 @@ This project is an Akan names calculator, derived from Ghanian culture. Frequent
 ## Author 
 Edu58
 
+## Screenshot
+![Home](images/Akan-Name-Calculator.png)
+
 ## live link 👇
 [Live Demo](https://edu58.github.io/Akan-Name-Calculator/) 
 
