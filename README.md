@@ -2,9 +2,9 @@
 This project is an Akan names calculator, derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. 
 
 ## Technologies used
-HTML
-CSS
-Bootstrap 5
+HTML <br>
+CSS <br>
+Bootstrap 5 <br>
 JavaScript
 
 ## Installation and Usage
