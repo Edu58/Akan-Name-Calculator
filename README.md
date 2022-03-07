@@ -17,6 +17,9 @@ Bootstrap 5 <br>
 JavaScript
 
 ## Installation and Usage
+```
+git clone https://github.com/Edu58/Akan-Name-Calculator.git
+```
 Git clone the repo to your PC/Mac and open the folder. Locate index.html and open it in a browser.
 Also, you can download the zip file to your computer. After downloading, unzip it and open the folder. Find the index.html fole and open it in your browser.
 
