@@ -14,7 +14,8 @@ Edu58
 HTML <br>
 CSS <br>
 Bootstrap 5 <br>
-JavaScript
+JavaScript <br>
+FontAwesome
 
 ## Installation and Usage
 ```
